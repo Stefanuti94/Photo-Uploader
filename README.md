@@ -12,6 +12,7 @@ Content
  
 
 1)Purpose
+ 
  The purpose of this document is to present an automation solution. You will find details about API, Cognito, Layer, S3. Also here you will find information and diagrams on how the services are interconnected.
  
 2)Tech stack
@@ -131,11 +132,9 @@ S3 bucket for photos will be called: yourplace
 In our bucket we will store only images. These objects will have a user-named part and in addition we will use a name convention timestamp that will be added automatically when the client uploads the file.
 
 
-
 8) Diagram & Logic
 
 ![Diagram](https://user-images.githubusercontent.com/82667872/155982869-7af3a2d5-e4ce-4cf6-89d5-dcbac5c7d0cc.png)
-
 
 1 -> User will send a request to cognito to create a username and a password.
 2 -> Users will access an API. Here, the user will send the requested information.

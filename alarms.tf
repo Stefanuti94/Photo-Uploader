@@ -1,3 +1,4 @@
+#Alarms
 resource "aws_cloudwatch_metric_alarm" "monitor_api_4xx" {
   alarm_name                = "4xxError"
   comparison_operator       = "GreaterThanOrEqualToThreshold"

@@ -1,3 +1,4 @@
+#Cognito
 resource "aws_cognito_user_pool_domain" "main" {
   domain       = "accessdomain"
   user_pool_id = aws_cognito_user_pool.AccessGroup1.id

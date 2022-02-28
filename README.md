@@ -136,6 +136,7 @@ In our bucket we will store only images. These objects will have a user-named pa
 
 ![Diagram](https://user-images.githubusercontent.com/82667872/155982869-7af3a2d5-e4ce-4cf6-89d5-dcbac5c7d0cc.png)
 
+
 1 -> User will send a request to cognito to create a username and a password.
 2 -> Users will access an API. Here, the user will send the requested information.
 3 -> Api Gateway will check with Cognito if the user exists or not.

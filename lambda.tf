@@ -30,7 +30,6 @@ resource "aws_cloudwatch_log_group" "lambda_login_logs" {
 }
 
 #Lambda Upload Single Photo
-
 data "archive_file" "lambda_zip_upload" {
     type          = "zip"
     source_file   = "${path.module}/src/lambda_upload.py"

@@ -27,8 +27,7 @@ def lambda_handler(event, context):
             "body": json.dumps({
                     'jwt': response["AuthenticationResult"]["IdToken"],
                     'credentials': credentials["username"]}) 
-        }
-        
+        }    
     except client.exceptions.UserNotFoundException:
         return{
             "statusCode": 401,

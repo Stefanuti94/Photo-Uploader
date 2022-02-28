@@ -221,6 +221,7 @@ data "aws_iam_policy_document" "lambda_unzip_policy" {
 }
 
 #Iam Lambda List
+
 resource "aws_iam_role" "lambda_list" {
    name = "lambda_list"
    assume_role_policy = data.aws_iam_policy_document.lambda_list.json

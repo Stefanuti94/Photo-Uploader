@@ -63,7 +63,6 @@ resource "aws_cloudwatch_log_group" "lambda_upload_logs" {
 }
 
 #Lambda Download
-
 data "archive_file" "lambda_download" {
     type          = "zip"
     source_file   = "${path.module}/src/lambda_download.py"
@@ -97,7 +96,6 @@ resource "aws_cloudwatch_log_group" "lambda_download_logs" {
 }
 
 #Lambda Delete
-
 data "archive_file" "lambda_delete" {
     type          = "zip"
     source_file   = "${path.module}/src/lambda_delete.py"
